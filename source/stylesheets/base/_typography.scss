@@ -1,0 +1,33 @@
+// Typefaces
+$typeface-sans:  "freight-sans-pro", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+$typeface-serif: "chaparral-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+
+p, a, h1, h2, h3, h4, h5, label {
+  color: inherit;
+  font-family: $typeface-serif;
+}
+
+h1 {
+  color: $grey;
+  font-family: $typeface-sans;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {}
+
+h3 {
+  font-family: $typeface-sans;
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {
+  font-weight: 300;
+}
+
+hr {}

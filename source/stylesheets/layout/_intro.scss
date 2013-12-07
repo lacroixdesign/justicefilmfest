@@ -1,0 +1,8 @@
+.l-intro-copy {
+
+  @include media-ie($breakpoint-ipad) {
+    @include span-columns(6);
+
+  } // @include media($breakpoint-ipad)
+
+} // .l-intro-copy

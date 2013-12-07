@@ -1,0 +1,29 @@
+.s-footer {
+  background: $black;
+  padding: 3em 0;
+  color: $white;
+
+  .s-footer--social {
+
+    ul {
+      @include unstyled-list;
+      color: $grey;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0.5em;
+    }
+
+    a {
+      color: $grey;
+
+      &:hover { color: $red; }
+      &:active { color: darken($red, 10%); }
+    }
+
+  } // .s-footer--social
+
+} // .s-footer
