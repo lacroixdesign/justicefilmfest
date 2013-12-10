@@ -11,10 +11,25 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  .s-header--logo {
+  .header--logo {
     max-width: 5.5em;
     img { width: 100%; }
   }
+
+  .header--nav {
+
+    ul {
+      @include unstyled-list;
+      display: inline;
+      float: right;
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+  } // .header--nav
 
   @include media-ie(min-height 35em) {
 

@@ -8,8 +8,11 @@ section#films.m-section.m-section-light-bg
             = image_tag "films/#{film.poster}"
           .l-film-info
             h2 = film.title
-            h5 Director: #{film.director}
-            .l-film-trailer
-              = link_to film.trailer, target: '_blank' do
-                | #{icon('e007')} View Trailer
-            p = film.synopsis
+            - if film.director
+              h5 Director: #{film.director}
+            - if film.trailer
+              .l-film-trailer
+                = link_to film.trailer, target: '_blank' do
+                  | #{icon('e007')} View Trailer
+            - if film.synopsis
+              p = film.synopsis
