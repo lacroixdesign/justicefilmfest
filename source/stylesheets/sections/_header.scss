@@ -16,7 +16,7 @@
     img { width: 100%; }
   }
 
-  @include media(min-height 35em) {
+  @include media-ie(min-height 35em) {
 
     .s-header--logo {
       max-width: 7.5em;

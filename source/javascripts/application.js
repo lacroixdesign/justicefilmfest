@@ -1,3 +1,4 @@
+//= require modernizr.min
 //= require ondomready.min
 //= require map/style
 //= require map/init
