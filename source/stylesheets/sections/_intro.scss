@@ -37,8 +37,8 @@
   a {
     color: $white;
 
-    &:hover { color: $red; }
-    &:active { color: darken($red, 10%); }
+    &:hover { color: darken($white, 25%); }
+    &:active { color: darken($white, 50%); }
   }
 
   p.s-intro--venue {
@@ -57,6 +57,8 @@
 
     li {
       padding-left: 1.25em;
+      font-family: $typeface-serif;
+      font-weight: 300;
     }
 
     li:before {
