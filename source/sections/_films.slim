@@ -3,8 +3,8 @@ section#films.m-section.m-section-light-bg
     h1 Films
     .l-films
       - data.films.each do |film|
-        .l-film
-          .l-film-poster
+        .l-film.m-film
+          .l-film-poster.m-film-poster
             = image_tag "films/#{film.poster}"
           .l-film-info
             h2 = film.title
