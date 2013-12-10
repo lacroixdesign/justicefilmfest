@@ -1,9 +1,16 @@
 .m-section {
   padding: 2em 0;
-}
+
+  a {
+    color: darken($tan, 25%);
+    &:hover { color: $red; }
+    &:active { color: darken($red, 10%); }
+  }
+
+} // .m-section
 
 .m-section-light-bg {
-  background: $white;
+  background: $near-white;
   color: $dark-grey;
 }
 

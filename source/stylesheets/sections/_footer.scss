@@ -20,8 +20,8 @@
     a {
       color: $grey;
 
-      &:hover { color: lighten($grey, 10%); }
-      &:active { color: darken($grey, 10%); }
+      &:hover { color: darken($grey, 5); }
+      &:active { color: darken($grey, 10); }
     }
 
   } // .s-footer--social

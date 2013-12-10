@@ -2,12 +2,6 @@
 body {
   @include ie-width;
   background: $black;
-  font-family: $typeface-sans;
+  font-family: $typeface-serif;
   text-shadow: 1px 1px 1px transparent;
-}
-
-a {
-  color: darken($tan, 25%);
-  &:hover { color: $red; }
-  &:active { color: darken($red, 10%); }
 }

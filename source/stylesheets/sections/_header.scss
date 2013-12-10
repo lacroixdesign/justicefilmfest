@@ -2,41 +2,22 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
+  height: #{$header-height-small}em;
   width: 100%;
-  padding: 0.125em 0;
-  background: #fff;
-  background: rgba(255,255,255,0.9375);
+  background: $white;
+  background: rgba($white, 0.9375);
   color: $grey;
   font-weight: bold;
   text-transform: uppercase;
 
-  .header--logo {
-    max-width: 5.5em;
-    img { width: 100%; }
+  * {
+    display: block;
+    height: 100%;
   }
 
-  .header--nav {
-
-    ul {
-      @include unstyled-list;
-      display: inline;
-      float: right;
-      text-align: right;
-    }
-
-    li {
-      display: inline-block;
-    }
-
-  } // .header--nav
-
-  @include media-ie(min-height 35em) {
-
-    .s-header--logo {
-      max-width: 7.5em;
-    }
-
-  } // @include media-ie(min-height 40em)
+  @include media-ie(min-height $header-breakpoint) {
+    height: #{$header-height-large}em;
+  }
 
 } // .s-header

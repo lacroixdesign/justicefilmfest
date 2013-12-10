@@ -15,12 +15,15 @@
 
 // Layout
 @import "layout/containers";
+@import "layout/header";
+@import "layout/nav";
 @import "layout/intro";
 @import "layout/map";
 @import "layout/films";
 
 // Modules
 @import "modules/sections";
+@import "modules/nav";
 
 // Sections
 @import "sections/header";
