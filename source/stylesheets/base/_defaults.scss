@@ -5,3 +5,9 @@ body {
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
 }
+
+a {
+  color: darken($tan, 25%);
+  &:hover { color: $red; }
+  &:active { color: darken($red, 10%); }
+}

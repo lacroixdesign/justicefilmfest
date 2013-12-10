@@ -4,7 +4,7 @@
 
 .l-film {
   @include row;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 } // .l-film
 
 .l-film-poster {
@@ -21,7 +21,9 @@
 
 } // .l-film-poster
 
-.l-film-info {} // .l-film-info
+.l-film-trailer {
+  margin: 0.5em 0;
+}
 
 @include media(600px) {
 

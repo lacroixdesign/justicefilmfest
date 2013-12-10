@@ -24,6 +24,7 @@
   }
 
   h2 {
+    margin-bottom: 0.5em;
     color: $tan;
   }
 
@@ -41,16 +42,16 @@
     &:active { color: darken($white, 50%); }
   }
 
-  p.s-intro--venue {
+  p.intro--venue {
     margin-bottom: 0;
   }
 
-  p.s-intro--city {
+  p.intro--city {
     font-size: 0.75em;
     font-style: italic;
   }
 
-  ul.s-intro--tickets {
+  ul.intro--tickets {
     @include unstyled-list;
     margin-bottom: 2em;
     font-weight: 600;
