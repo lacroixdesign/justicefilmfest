@@ -1,0 +1,14 @@
+section#films.m-section.m-section-light-bg
+  .l-constrained
+    h1 Films
+    .l-films
+      - data.films.each do |film|
+        .l-film
+          .l-film-poster
+            = image_tag "films/#{film.poster}"
+          .l-film-info
+            h2 = film.title
+            h5 = film.director
+            = link_to film.trailer do
+              | #{icon('e001')} View Trailer
+            p = film.synopsis

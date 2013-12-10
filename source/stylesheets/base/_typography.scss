@@ -5,6 +5,7 @@ $typeface-serif: "chaparral-pro", Georgia, Cambria, "Times New Roman", Times, se
 p, a, h1, h2, h3, h4, h5, label {
   color: inherit;
   font-family: $typeface-serif;
+  line-height: 1.0625;
 }
 
 h1 {
@@ -14,15 +15,22 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {}
+h2 {
+  font-size: 1.5em;
+}
 
 h3 {
   font-family: $typeface-sans;
+  font-size: 1.25em;
 }
 
-h4 {}
+h4 {
+  font-size: 1.125em;
+}
 
-h5 {}
+h5 {
+  font-size: 1em;
+}
 
 h6 {}
 

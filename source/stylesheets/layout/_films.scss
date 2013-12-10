@@ -1,0 +1,51 @@
+.l-films {
+  @include row;
+} // .l-films
+
+.l-film {
+  @include row;
+  margin-bottom: 1em;
+} // .l-film
+
+.l-film-poster {
+  // @include span-columns(4);
+  float: left;
+  width: 100%;
+  max-width: 6em;
+  margin: 0 0.75em 0.25em 0;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+} // .l-film-poster
+
+.l-film-info {} // .l-film-info
+
+@include media(600px) {
+
+  .l-film {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+} // @include media(600px)
+
+@include media-ie-only {
+
+  .l-film {
+    float: left;
+    width: 46%;
+    margin-right: 2%;
+  }
+
+} // @include media-ie-only
+
+@include media-ie(800px) {
+
+  .l-film-poster {
+    max-width: 10em;
+  }
+
+} // @include media(800px)
