@@ -2,7 +2,8 @@
 
 (function() {
 
-  var coordinates = new google.maps.LatLng(34.050286, -118.24568699999998);
+  var coordinates  = new google.maps.LatLng(34.052286, -118.24568699999998);
+  var markerCoords = new google.maps.LatLng(34.050286, -118.24568699999998);
 
   var opts = {
     zoom: 16,
@@ -20,7 +21,7 @@
     var map = new google.maps.Map(document.getElementById('map'), opts);
 
     var marker = new google.maps.Marker({
-      position: coordinates,
+      position: markerCoords,
       animation: google.maps.Animation.DROP
     });
     marker.setMap(map);
