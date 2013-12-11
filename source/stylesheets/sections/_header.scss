@@ -13,7 +13,6 @@
 
   .header--logo a {
     padding: 0.25em 0.5em;
-    &:hover { background: darken($white, 0); }
   }
 
   @include media-ie(min-height $header-breakpoint) {
