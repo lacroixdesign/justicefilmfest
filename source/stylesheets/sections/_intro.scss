@@ -19,7 +19,6 @@
   }
 
   p {
-    font-weight: 300;
     font-size: 1.25em;
   }
 
@@ -53,12 +52,10 @@
   ul.intro--tickets {
     @include unstyled-list;
     margin-bottom: 2em;
-    font-weight: 600;
 
     li {
       padding-left: 1.25em;
       font-family: $typeface-serif;
-      font-weight: 300;
     }
 
     li:before {
