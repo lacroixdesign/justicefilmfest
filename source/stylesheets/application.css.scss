@@ -1,6 +1,7 @@
 // Libraries
 @import "boarding_pass";
 @import "icomoon";
+@import "base/colors";
 @import "base/settings";
 
 // Mixins
@@ -8,7 +9,6 @@
 @import "mixins/utilities";
 
 // Base
-@import "base/colors";
 @import "base/typography";
 @import "base/defaults";
 @import "base/forms";
@@ -33,3 +33,4 @@
 @import "sections/footer";
 
 // States
+@import "states/nav";

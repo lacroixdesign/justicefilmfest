@@ -1,8 +1,50 @@
+.l-header-constrained {
+  @include clearfix;
+  @include ie-width;
+  height: 100%;
+}
+
 .l-header-logo {
   float: left;
-  padding: 0.25em 0;
+  height: 100%;
+
+  * {
+    display: block;
+    height: 100%;
+  }
+
+} // .l-header-logo
+
+.l-header-toggle {
+  float: right;
+  height: 100%;
 }
 
 .l-header-nav {
-  float: right;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: $white;
+  background: rgba($white, 0.9375);
 }
+
+@include media-ie($nav-breakpoint) {
+
+  .l-header-toggle {
+    display: none;
+  }
+
+  .l-header-nav {
+    display: block;
+    position: static;
+    float: right;
+    width: auto;
+    height: 100%;
+    background: transparent;
+    li { float: left; }
+  }
+
+} // @include

@@ -1,0 +1,15 @@
+#menu:target {
+
+  [data-behavior='open-menu'] {
+    display: none;
+  }
+
+  [data-behavior='close-menu'] {
+    display: block;
+  }
+
+  [role='navigation'] {
+    display: block;
+  }
+
+} // #menu:target

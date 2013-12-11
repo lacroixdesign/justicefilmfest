@@ -11,13 +11,18 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  * {
-    display: block;
-    height: 100%;
+  .header--logo a {
+    padding: 0.25em 0.5em;
+    &:hover { background: darken($white, 0); }
   }
 
   @include media-ie(min-height $header-breakpoint) {
     height: #{$header-height-large}em;
-  }
+
+    .header--logo a {
+      padding: 0.5em;
+    }
+
+  } // @include media-ie
 
 } // .s-header

@@ -1,8 +1,14 @@
 header#header.s-header
-  .l-constrained
-    .l-header-logo
+  .l-header-constrained#menu
+    .l-header-logo.header--logo
       a href='#intro' = image_tag 'logo.png'
-    nav.l-header-nav
+    .l-header-toggle#close
+      ul.m-nav
+        li(data-behavior='open-menu')
+          a.nav--inline(href='#menu' role='button') = icon('e008')
+        li(data-behavior='close-menu')
+          a.nav--inline.nav--btn(href='#close-menu' role='button') = icon('e36b')
+    nav.l-header-nav(role='navigation')
       ul.m-nav
         li: a(href='#films') Films
         li: a(href='#location') Location
