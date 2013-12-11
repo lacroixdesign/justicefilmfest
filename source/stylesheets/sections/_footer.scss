@@ -23,4 +23,31 @@
 
   } // .footer--social
 
+  .footer--attribution {
+    max-width: 30em;
+    padding-top: 1em;
+    margin: auto;
+    border-top: 1px solid $dark-grey;
+    font-size: 0.875em;
+    font-style: italic;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      border-radius: 1px;
+    }
+
+    a:hover {
+      background: lighten($black, 10);
+      color: $white;
+    }
+
+    a:active {
+      background: lighten($black, 15);
+      color: $white;
+    }
+
+  } // .footer--attribution
+
 } // .s-footer
