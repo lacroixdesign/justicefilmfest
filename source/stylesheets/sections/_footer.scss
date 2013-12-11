@@ -3,27 +3,24 @@
   padding: 3em 0;
   color: $white;
 
-  .s-footer--social {
-
-    ul {
-      @include unstyled-list;
-      color: $grey;
-      text-align: center;
-      font-size: 1.5em;
-    }
+  .footer--social {
+    @include unstyled-list;
+    color: $grey;
+    text-align: center;
+    font-size: 3em;
 
     li {
       display: inline-block;
-      margin: 0.5em;
+      margin: 0 0 0 0.5em;
+      &:first-child { margin-left: 0; }
     }
 
     a {
       color: $grey;
-
-      &:hover { color: darken($grey, 5); }
-      &:active { color: darken($grey, 10); }
+      &:hover { color: $near-white; }
+      &:active { color: $white; }
     }
 
-  } // .s-footer--social
+  } // .footer--social
 
 } // .s-footer

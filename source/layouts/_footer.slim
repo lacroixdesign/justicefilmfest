@@ -1,10 +1,5 @@
 footer#footer.s-footer
   .l-constrained
-    .s-footer--social
-      ul
-        li
-          a(href="https://twitter.com/justicefilmfest" target="_blank")
-            = icon("e001")
-        li
-          a(href="https://www.facebook.com/JusticeFilmFest" target="_blank")
-            = icon("e002")
+    ul.footer--social
+      li = link_to icon("e001"), data.urls.twitter, target: '_blank'
+      li = link_to icon("e002"), data.urls.facebook, target: '_blank'
