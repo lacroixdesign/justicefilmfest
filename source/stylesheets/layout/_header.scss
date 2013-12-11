@@ -1,3 +1,12 @@
+.l-header {
+  height: #{$header-height-small}em;
+
+  @include media-ie(min-height $header-breakpoint) {
+    height: #{$header-height-large}em;
+  }
+
+} // .l-header
+
 .l-header-constrained {
   @include clearfix;
   @include ie-width;

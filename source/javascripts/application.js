@@ -8,9 +8,9 @@
 
 /* globals FastClick */
 
-/*
- * init FastClick
- */
 window.addEventListener('load', function() {
+
+  // FastClick
   FastClick.attach(document.body);
+
 }, false);

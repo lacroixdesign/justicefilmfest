@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   z-index: 100;
-  height: #{$header-height-small}em;
   width: 100%;
   background: $white;
   background: rgba($white, 0.9375);
@@ -16,7 +15,6 @@
   }
 
   @include media-ie(min-height $header-breakpoint) {
-    height: #{$header-height-large}em;
 
     .header--logo a {
       padding: 0.5em;
