@@ -13,14 +13,18 @@
     text-align: center;
   }
 
-  p {
-    font-size: 1.25em;
-  }
-
     @include media-ie($breakpoint-ipad) {
       @include span-columns(8);
       @include shift(2);
 
+
   } // @include media-ie($breakpoint-ipad)
+
+  @include media-ie($breakpoint-desktop) {
+    p {
+      font-size: 1.25em;
+    }
+
+  } // @include media-ie($breakpoint-desktop)
 
 } // .l-news
