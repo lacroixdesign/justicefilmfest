@@ -26,6 +26,7 @@ helpers ApplicationHelper
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
+activate :directory_indexes
 
 activate :deploy do |deploy|
   deploy.method = :git
