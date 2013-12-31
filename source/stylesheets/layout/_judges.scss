@@ -1,0 +1,30 @@
+.l-judges {
+  @include row;
+} // .l-films
+
+.l-judge {
+  margin-bottom: 2em;
+
+  @include media(min-width 400px max-width ($breakpoint-ipad - 1)) {
+    @include span-columns(3 of 6);
+    @include omega(2n);
+  }
+
+  @include media(min-width $breakpoint-ipad max-width ($breakpoint-desktop - 1)) {
+    @include span-columns(1 of 3);
+    @include omega(3n);
+  }
+
+  @include media($breakpoint-desktop) {
+    @include span-columns(1 of 5);
+    @include omega(5n);
+  }
+
+  @include media-ie-only {
+    float: left;
+    width: 19%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
+
+} // .l-judge

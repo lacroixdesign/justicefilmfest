@@ -1,0 +1,11 @@
+section#judges.m-section.m-section-white-bg
+  .l-constrained
+    h1 Judges
+    .l-judges
+      - data.judges.each do |judge|
+        .l-judge
+          a.m-judge(href="judges/#{judge.slug}")
+            .judge--photo
+              = image_tag "judges/#{judge.image}"
+              .judge--overlay More Info
+            h2 = judge.name
