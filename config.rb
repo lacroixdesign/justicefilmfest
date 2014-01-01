@@ -27,7 +27,7 @@ helpers ApplicationHelper
 # end
 
 data.judges.each do |judge|
-  proxy "/judges/#{judge.slug}.html", "/judges/template.html", :locals => { :judge => judge }
+  proxy "/judges/#{judge.slug}.html", "/judges/template.html", :locals => { :judge => judge }, :ignore => true
 end
 
 activate :directory_indexes
