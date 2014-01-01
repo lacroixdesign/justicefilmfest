@@ -1,0 +1,12 @@
+section#news.m-section.m-section-light-bg
+  .l-constrained
+    .l-judge-details
+
+      .m-judge
+        .l-judge-photo.judge--photo
+          = image_tag "judges/#{judge.image}"
+        h2 = judge.name
+        h5 = link_to "@#{judge.twitter}", "https://twitter.com/#{judge.twitter}"
+
+      .m-judge-bio
+        p = judge.bio

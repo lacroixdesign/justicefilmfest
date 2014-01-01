@@ -3,9 +3,6 @@
 
   .judge--photo {
     position: relative;
-    max-width: 10em;
-    margin: auto;
-    margin-bottom: 1em;
     border-radius: 50%;
   }
 
@@ -17,50 +14,59 @@
     box-shadow: 0px 1px 2px darken($white, 10);
   }
 
-  .judge--overlay {
-    @include transition(background-color 0.25s ease-in-out, color 0.25s ease-in-out);
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    padding: 45% 20%;
-    border-radius: inherit;
-    background: transparent;
-    color: transparent;
-    font-size: 1.25em;
-    font-weight: bold;
-    font-style: italic;
-    @include media-ie-only { display: none; }
+}  // .m-judge
+
+.m-judge-overlay {
+  @include transition(background-color 0.25s ease-in-out);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 45% 20%;
+  border-radius: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-style: italic;
+  @include media-ie-only { display: none; }
+
+  .judge-overlay--info {
+    @include transition(all 0.25s ease-in-out);
+    @include transform(translateX(-160px));
   }
 
-  &:hover {
+  a:hover & {
+    background: $red;
+    background: rgba($red,0.625);
+    color: $white;
+    @include media-ie-only { display: block; }
 
-    .judge--overlay {
-      background: $red;
-      background: rgba($red,0.625);
-      color: $white;
-      @include media-ie-only { display: block; }
+    .judge-overlay--info {
+      @include transform(translateX(0px));
+      transition-delay: 0.125s;
     }
 
     img {
-      border: 1px solid $red;
-      box-shadow: 0px 1px 2px $red;
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
       filter: grayscale(100%);
+      border: 1px solid $red;
+      box-shadow: 0px 1px 2px $red;
     }
 
-  } // &:hover
+  } // a:hover &
 
-  &:active {
+  a:active & {
+    background: darken($red, 10);
+    background: rgba(darken($red, 10),0.75);
+    color: $white;
+    @include media-ie-only { display: block; }
 
-    .judge--overlay {
-      background: darken($red, 10);
-      background: rgba(darken($red, 10),0.75);
-      color: $white;
-      @include media-ie-only { display: block; }
+    .judge-overlay--info {
+      @include transform(translateX(160px));
     }
 
     img {
@@ -68,6 +74,11 @@
       box-shadow: none;
     }
 
-  } // &:active
+  } // a:active &
 
-}  // .m-judge
+} // .m-judge-overlay
+
+.m-judge-bio {
+  text-align: justify;
+  font-size: 1.25em;
+}

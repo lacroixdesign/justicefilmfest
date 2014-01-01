@@ -26,6 +26,10 @@ helpers ApplicationHelper
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
+data.judges.each do |judge|
+  proxy "/judges/#{judge.slug}.html", "/judges/template.html", :locals => { :judge => judge }
+end
+
 activate :directory_indexes
 
 activate :deploy do |deploy|

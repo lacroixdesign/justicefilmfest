@@ -5,7 +5,8 @@ section#judges.m-section.m-section-white-bg
       - data.judges.each do |judge|
         .l-judge
           a.m-judge(href="judges/#{judge.slug}")
-            .judge--photo
+            .l-judge-photo.judge--photo
               = image_tag "judges/#{judge.image}"
-              .judge--overlay More Info
+              .m-judge-overlay
+                .judge-overlay--info More Info
             h2 = judge.name
