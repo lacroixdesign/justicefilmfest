@@ -6,6 +6,11 @@
     text-align: center;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   h3 {
     margin-bottom: 1em;
     color: $grey;
@@ -13,15 +18,15 @@
     text-align: center;
   }
 
+  li {
+    border-bottom: 1px solid $tan;
+    list-style: none;
+    &:last-child { border-bottom: none }
+  }
+
   @include media-ie($breakpoint-ipad) {
     @include span-columns(8);
     @include shift(2);
-  }
-
-  @include media-ie($breakpoint-desktop) {
-
-    p { font-size: 1.25em; }
-
-  } // @include media-ie($breakpoint-desktop)
+  } // @include media-ie($breakpoint-ipad)
 
 } // .l-news

@@ -1,0 +1,23 @@
+.m-content {
+
+  img {
+    padding: 0.5em;
+    border: 1px solid;
+    border-color: #e8e8e8;
+    background: $white;
+  }
+
+  .content--featured {
+    margin-bottom: 1.5em;
+  } // .content--featured
+
+  @include media-ie($breakpoint-desktop) {
+
+    p { font-size: 1.25em; }
+
+  } // @include media-ie($breakpoint-desktop)
+
+} // .m-content
+
+
+
