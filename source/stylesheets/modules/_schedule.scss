@@ -1,0 +1,35 @@
+.m-schedule {
+
+  tr {
+    border-bottom: 1px dotted darken($light-grey, 10);
+    &:last-child { border-bottom: none }
+  }
+
+  td {
+    vertical-align: top;
+    padding: 0.25em;
+    border: none;
+  }
+
+  .schedule--time {
+    padding-left: 0;
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .schedule--film {
+    padding-right: 0;
+  }
+
+  @include media-ie(480px) {
+    font-size: 125%;
+
+    td {
+      vertical-align: top;
+      padding: 0.25em;
+    }
+
+  } // @include media-ie($breakpoint-ipad)
+
+} // .m-schedule
