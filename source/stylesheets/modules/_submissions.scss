@@ -1,0 +1,46 @@
+.m-submissions {
+  text-align: center;
+
+  th {
+    color: $grey;
+    text-align: center;
+    font-family: $typeface-sans;
+    text-transform: uppercase;
+  }
+
+  tr {
+    border-bottom: 1px dotted darken($light-grey, 10);
+    &:last-child { border-bottom: none }
+  }
+
+  td {
+    vertical-align: top;
+    padding: 0.25em;
+    border: none;
+  }
+
+  .submission--date {
+    padding-left: 0;
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .submission--fee {
+    padding-right: 0;
+  }
+
+  @include media-ie(480px) {
+
+    .m-submissions--table{
+      font-size: 125%;
+
+      td {
+        vertical-align: top;
+        padding: 0.25em;
+      }
+    }
+
+  } // @include media-ie($breakpoint-ipad)
+
+} // .m-schedule
