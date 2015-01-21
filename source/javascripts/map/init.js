@@ -2,8 +2,8 @@
 
 (function() {
 
-  var coordinates  = new google.maps.LatLng(34.052286, -118.24568699999998);
-  var markerCoords = new google.maps.LatLng(34.050286, -118.24568699999998);
+  var coordinates  = new google.maps.LatLng(41.8690859,-87.6261165);
+  var markerCoords = new google.maps.LatLng(41.8690859,-87.6261165);
 
   var opts = {
     zoom: 16,
@@ -27,7 +27,7 @@
     marker.setMap(map);
 
     var infoWindow = new google.maps.InfoWindow({
-      content: "<h3>Justice Film Festival</h3><strong>Downtown Independent</strong><br>251 S. Main Street<br>Los Angeles, CA 90012"
+      content: "<h3>Justice Film Festival</h3><strong>Film Row Cinema at Columbia College</strong><br>1104 S. Wabash Ave<br>Chicago IL 60605"
     });
     infoWindow.open(map, marker);
   });
