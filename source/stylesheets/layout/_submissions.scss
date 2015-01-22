@@ -1,7 +1,8 @@
 .l-submissions {
 
-  .l-schedule--table {
-    margin: 1em auto 2em;
+  .l-submissions--table {
+    margin-top: 1em;
+    margin-bottom: 2em;
 
   &:nth-of-type(2n) { margin-bottom: none; }
   }
@@ -10,7 +11,7 @@
   @include media-ie(960px) {
     @include row;
 
-    .l-schedule--table {
+    .l-submissions--table {
       @include span-columns(6);
       @include omega(2n);
     }

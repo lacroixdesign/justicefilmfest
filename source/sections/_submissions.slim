@@ -3,26 +3,34 @@ section#submissions.m-section.m-section-white-bg
     .m-submissions
       h1 Submissions
       h2 We Are Now Accepting Your Submissions!
-      p To submit your film, please visit:
+      .m-submissions__freeway
+        a href='https://filmfreeway.com/festival/JusticeFilmFestival' = image_tag 'submit_btn-red.png'
+
       h4 Below you will find the submission deadlines & prices:
 
-      .l-submissions.m-submissions--table
-        table.l-schedule--table
-          thead
-            tr
-              th(colspan="2") Feature Films & Documentaries
-          tbody
-            - data.feature_submissions.each do |feature_submissions|
-              tr
-                td.submission--date #{feature_submissions.date}
-                td.submission--fee #{feature_submissions.fee}
 
-        table.l-schedule--table
-          thead
-            tr
-              th(colspan="2") Short Films & Documentaries
-          tbody
-            - data.short_submissions.each do |short_submissions|
+      .l-submissions.m-submissions--table
+        .l-submissions--table
+          table
+            thead
               tr
-                td.submission--date #{short_submissions.date}
-                td.submission--fee #{short_submissions.fee}
+                th(colspan="2") Feature Films & Documentaries
+            tbody
+              - data.feature_submissions.each do |feature_submissions|
+                tr
+                  td.submission--date #{feature_submissions.date}
+                  td.submission--fee #{feature_submissions.fee}
+
+        .l-submissions--table
+          table
+            thead
+              tr
+                th(colspan="2") Short Films & Documentaries
+            tbody
+              - data.short_submissions.each do |short_submissions|
+                tr
+                  td.submission--date #{short_submissions.date}
+                  td.submission--fee #{short_submissions.fee}
+
+      p
+        = link_to 'Questions? Please email info@justicefilmfest.com', 'mailto:info@JusticeFilmFest.com'

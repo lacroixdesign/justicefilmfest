@@ -1,6 +1,10 @@
 .m-submissions {
   text-align: center;
 
+  table {
+    margin: auto;
+  }
+
   th {
     color: $grey;
     text-align: center;
@@ -17,6 +21,21 @@
     vertical-align: top;
     padding: 0.25em;
     border: none;
+  }
+
+  .m-submissions__freeway {
+    background: black;
+    width: 15em;
+    margin: 1em auto 3em;
+    border-radius: 6px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+
+      &:hover { opacity: 0.875; }
+    }
   }
 
   .submission--date {
@@ -40,6 +59,8 @@
         padding: 0.25em;
       }
     }
+
+    .m-submissions__freeway { width: 20em; }
 
   } // @include media-ie($breakpoint-ipad)
 
