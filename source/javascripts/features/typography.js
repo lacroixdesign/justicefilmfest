@@ -1,5 +1,5 @@
 $(function() {
 
-  // put your fittext init here
+  jQuery("#intro_headline").fitText(1);
 
 });
