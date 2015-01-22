@@ -1,8 +1,26 @@
 .l-intro-copy {
 
+  .l-intro-copy--column-wrapper {
+    @include row;
+  }
+
   @include media-ie($breakpoint-ipad) {
     @include span-columns(8);
 
   } // @include media($breakpoint-ipad)
+
+  @include media-ie($breakpoint-desktop) {
+    @include span-columns(12);
+
+    .l-intro-copy--column {
+      @include span-columns(8);
+    }
+
+    .l-intro-copy--details {
+      @include span-columns(4);
+      @include omega;
+    }
+
+  } // @include media($breakpoint-desktop)
 
 } // .l-intro-copy

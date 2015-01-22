@@ -4,16 +4,17 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 6em 0;
+  padding: 6em 0 0;
   color: $white;
 
   h1 {
+    max-width: 4em;
     margin-bottom: 0.25em;
     border-bottom: 1px solid $dark-grey;
     padding-bottom: 0.25em;
     text-align: left;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 3em;
     line-height: 0.875;
   }
 
@@ -67,6 +68,12 @@
 
   } // ul.s-intro--tickets
 
+  .s-intro--lead-copy {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+
   a.btn-register {
     background: $red;
     display: inline-block;
@@ -79,10 +86,44 @@
 
   } // a.btn-register
 
+  .s-intro--details-desktop {
+    display: none;
+  }
+
+  .s-intro--details-mobile {
+    @include outer-container;
+    width: 100%;
+    background: rgba($black, 0.875);
+    padding: $page-gutter 0;
+  }
+
 
   @include media-ie($breakpoint-ipad) {
-    h1 { font-size: 4em; }
+    h1 {
+      font-size: 4em;
+    }
 
   } // @include media-ie($breakpoint-ipad)
+
+  @include media-ie($breakpoint-desktop) {
+    padding-bottom: 6em;
+
+    h1 {
+      @include span-columns (8);
+      @include omega;
+      max-width: none;
+    }
+
+    .s-intro--details-desktop {
+      display: block;
+      padding: 2em;
+      background: rgba($black, 0.875);
+    }
+
+    .s-intro--details-mobile {
+      display: none;
+    }
+
+  } // @include media-ie($breakpoint-desktop)
 
 } // .s-intro
