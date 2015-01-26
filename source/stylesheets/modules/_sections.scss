@@ -1,5 +1,5 @@
 .m-section {
-  padding: 2em 0;
+  padding: 4em 0;
 
   a {
     color: darken($tan, 25);
@@ -24,8 +24,8 @@
 
 .m-section-light-bg {
   background: $near-white;
-  color: $dark-grey;
-  h1 { color: darken($light-grey, 10); }
+  color: darken($dark-grey, 15);
+  h1 { color: darken($light-grey, 15); }
 }
 
 .m-section-medium-bg {

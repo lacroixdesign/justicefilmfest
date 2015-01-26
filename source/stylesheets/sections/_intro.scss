@@ -93,21 +93,22 @@
     @include outer-container;
     width: 100%;
     background: rgba($black, 0.875);
-    padding: $page-gutter 0;
+    padding: 3em $page-gutter;
   }
 
 
   @include media-ie($breakpoint-desktop) {
-    padding-bottom: 6em;
+    padding: 12em 0 8em;
 
-    h1 {
-      @include span-columns (8);
-      @include omega;
+    .s-intro--lead-copy {
+      font-size: 2em;
+      font-style: italic;
     }
+
 
     .s-intro--details-desktop {
       display: block;
-      padding: 2em;
+      padding: 3em;
       background: rgba($black, 0.875);
     }
 

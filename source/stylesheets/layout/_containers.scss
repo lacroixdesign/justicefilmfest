@@ -17,3 +17,10 @@
     @include span-columns(4);
   }
 }
+
+.l-restricted {
+  @include media-ie($breakpoint-ipad) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}

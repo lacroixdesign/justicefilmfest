@@ -162,6 +162,24 @@
           "visibility": "simplified"
         }
       ]
+    },
+    {
+      "featureType": "transit.station",
+      "elementType": "labels.text",
+      "stylers": [
+        {
+          "hue": "#cc2023"
+        }
+      ]
+    },
+    {
+      "featureType": "transit.station",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "hue": "#cc2023"
+        }
+      ]
     }
   ];
 
