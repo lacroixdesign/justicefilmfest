@@ -1,6 +1,12 @@
 .m-section {
   padding: 4em 0;
 
+  h1 {
+    color: $red;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
   a {
     color: darken($tan, 25);
     &:hover { color: $red; }
@@ -19,17 +25,14 @@
 .m-section-white-bg {
   background: $white;
   color: $dark-grey;
-  h1 { color: darken($near-white, 10); }
 }
 
 .m-section-light-bg {
   background: $near-white;
   color: darken($dark-grey, 15);
-  h1 { color: darken($light-grey, 15); }
 }
 
 .m-section-medium-bg {
   background: $grey;
   color: $dark-grey;
-  h1 { color: darken($grey, 20); }
 }
