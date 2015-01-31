@@ -1,0 +1,15 @@
+- wrap_layout :layout do
+
+  section#news.m-section.m-section-light-bg
+    .l-constrained
+      .l-judge-details
+
+        .m-judge
+          .l-judge-photo.judge--photo
+            = image_tag judge_photo_path(current_page)
+          h2 = current_page.title
+          - if current_page.data.twitter
+            h5 = link_to "@#{current_page.data.twitter}", "https://twitter.com/#{current_page.data.twitter}", target: "_blank"
+
+        .m-judge-bio
+          = yield

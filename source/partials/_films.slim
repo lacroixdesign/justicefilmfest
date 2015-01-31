@@ -1,0 +1,19 @@
+- if data[year] && data[year].films.length > 0
+  section#films.m-section.m-section-light-bg
+    .l-constrained
+      h1 Films
+      .l-films
+        - data[year].films.each do |film|
+          .l-film.m-film
+            .l-film-poster.m-film-poster
+              = image_tag "#{year}/films/#{film.poster}"
+            .l-film-info
+              h2 = film.title
+              - if film.director
+                h5 Director: #{film.director}
+              - if film.trailer
+                .l-film-trailer
+                  = link_to film.trailer, target: '_blank' do
+                    | #{icon('e007')} View Trailer
+              - if film.synopsis
+                p = film.synopsis

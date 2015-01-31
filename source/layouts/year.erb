@@ -1,0 +1,17 @@
+<% wrap_layout :layout do %>
+  <% year = current_page.data.year %>
+
+  <div class="b-page-hero">
+    <div class="l-constrained">
+      <h1 id="intro_headline">Justice Film Festival <%= year %></h1>
+      <h2>
+        <%= current_page.data.location %>
+      </h3>
+    </div>
+  </div>
+
+  <%#= yield %>
+  <%= partial "partials/films", locals: { year: year } %>
+  <%= partial "partials/judges", locals: { year: year } %>
+  <%#= partial "partials/schedule", locals: { year: year } %>
+<% end %>

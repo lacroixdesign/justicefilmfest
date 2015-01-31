@@ -1,0 +1,13 @@
+- if blog("#{year}/judges").articles.length > 0
+  section#judges.m-section.m-section-white-bg
+    .l-constrained
+      h1 Judges
+      .l-judges
+        - blog("#{year}/judges").articles.each do |judge|
+          .l-judge
+            a.m-judge(href=judge.url)
+              .l-judge-photo.judge--photo
+                = image_tag judge_photo_path(judge)
+                .m-judge-overlay
+                  .judge-overlay--info More Info
+              h2 = judge.title

@@ -1,6 +1,11 @@
 require "boarding_pass"
-require "lib/application_helper"
-helpers ApplicationHelper
+
+set :helpers_dir, "helpers"
+set :helpers_filename_glob, "**/*_helper.rb"
+set :helpers_filename_to_module_name_proc, Proc.new { |filename|
+  basename = File.basename(filename, File.extname(filename))
+  basename.camelcase
+}
 
 # activate :livereload
 
@@ -26,8 +31,18 @@ helpers ApplicationHelper
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
-data.judges.each do |judge|
-  proxy "/judges/#{judge.slug}.html", "/judges/template.html", :locals => { :judge => judge }, :ignore => true
+years = [2014, 2015].map(&:to_s)
+
+years.each do |year|
+  activate :blog do |blog|
+    blog.name    = "#{year}/judges"
+    blog.prefix  = "#{year}/judges"
+    blog.sources = "{title}.html"
+    blog.layout    = "layouts/judge"
+    blog.permalink = "{title}"
+    blog.paginate  = false
+    blog.default_extension = ".md"
+  end
 end
 
 activate :directory_indexes
@@ -38,6 +53,7 @@ activate :deploy do |deploy|
   # deploy.branch = "gh-pages" # uses 'gh-pages' by default
 end
 
+activate :automatic_image_sizes
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'

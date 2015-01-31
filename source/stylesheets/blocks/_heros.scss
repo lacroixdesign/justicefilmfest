@@ -1,0 +1,21 @@
+.b-page-hero {
+  padding: #{8em + $header-height-large} 1em 8em;
+  background: image-url("standard-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+
+  h1 {
+    font-size: 4em;
+    font-weight: normal;
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+} // .b-page-hero

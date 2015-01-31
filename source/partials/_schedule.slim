@@ -1,0 +1,10 @@
+- if data[year] && data[year].schedule.length > 0
+  section#schedule.m-section.m-section-light-bg
+    .l-constrained
+      h1 Schedule
+      table.l-schedule.m-schedule
+        tbody
+          - data[year].schedule.each do |schedule|
+            tr
+              td.schedule--time #{schedule.time}
+              td.schedule--film #{schedule.film}
