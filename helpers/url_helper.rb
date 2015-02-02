@@ -2,7 +2,8 @@ module UrlHelper
 
   # Judge photo
   def judge_photo_path(judge)
-    "#{judge.url}#{judge.slug}.jpg"
+    path = judge.url.split("/").reject(&:empty?).join("/")
+    image_path("#{path}.jpg")
   end
 
   # Film photo
