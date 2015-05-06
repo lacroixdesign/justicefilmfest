@@ -10,6 +10,8 @@
             .l-film-info
               h2 = film.title
               - if film.director
+                h4 #{film.time}
+              - if film.director
                 h5 Director: #{film.director}
               - if film.country
                 h6 Country: #{film.country}
