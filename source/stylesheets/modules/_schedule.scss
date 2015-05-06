@@ -2,23 +2,25 @@
 
   tr {
     border-bottom: 1px dotted darken($light-grey, 10);
-    &:last-child { border-bottom: none }
+    &:last-child { border-bottom: 0; }
   }
 
   td {
-    vertical-align: top;
     padding: 0.25em;
     border: none;
+    vertical-align: top;
   }
 
-  .schedule--time {
+  .schedule--time,
+  .schedule--date {
     padding-left: 0;
     font-weight: bold;
     text-align: right;
     white-space: nowrap;
   }
 
-  .schedule--film {
+  .schedule--film,
+  .schedule--event {
     padding-right: 0;
   }
 
@@ -26,8 +28,8 @@
     font-size: 125%;
 
     td {
-      vertical-align: top;
       padding: 0.25em;
+      vertical-align: top;
     }
 
   } // @include media-ie($breakpoint-ipad)
