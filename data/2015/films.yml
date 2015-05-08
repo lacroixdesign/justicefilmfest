@@ -1,6 +1,6 @@
 -
   title: "Poverty, Inc."
-  time: "(21 minutes)"
+  time: "(81 minutes)"
   director: "Michael Matheson Miller"
   country: "USA"
   poster: "poverty-inc.jpg"
@@ -9,7 +9,7 @@
 -
   title: "Imba Means Sing"
   time: "(73 minutes)"
-  director: "Erin Bernhardt, Directed by – Danielle Bernstein"
+  director: "Danielle Bernstein"
   country: "Uganda"
   poster: "imba-means-sing.jpg"
   synopsis: "As a member of the African Children's Choir, Moses relies on his youthful resilience. Growing up in the slums of Kampala, Uganda, Moses and his family lack enough resources for him to even attend the first grade. In Imba Means Sing fellow choir members join Moses, on his journey from poverty towards his dream of becoming a pilot."
@@ -25,15 +25,15 @@
 -
   title: "Among The Discarded"
   time: "(48 minutes)"
-  director: "Trent Soto"
+  director: "Trent Dion Soto"
   country: "USA"
   poster: "among-the-discarded.jpg"
-  synopsis: "On his 44th birthday, artist Trent Dion Soto voluntarily joined the homeless population on LA’s notorious Skid Row for 30. With only basic toiletries, art supplies and his trusty GoPro camera, Soto captures the experience in this raw and emotional expose."
+  synopsis: "On his 44th birthday, artist Trent Dion Soto voluntarily joined the homeless population on LA’s notorious Skid Row for 30 days. With only basic toiletries, art supplies and his trusty GoPro camera, Soto captures the experience in this raw and emotional expose."
 
 -
   title: "Katie"
   time: "(15 minutes)"
-  director: "Sara Farnsworth"
+  director: "Nathan Gotsch"
   country: "USA"
   poster: "katie.jpg"
   synopsis: "Inspired by actual events, Katie is the story of an adolescent girl caught in the web of domestic sex trafficking."
@@ -41,7 +41,7 @@
 -
   title: "In Plain Sight"
   time: "(68 minutes)"
-  director: "David Trotter"
+  director: "David Trotter, Noah Lamberth"
   country: "USA"
   poster: "in-plain-sight.jpg"
   synopsis: "In Plain Sight seeks to raise awareness of the thousands of women and children who are forced, coerced, or deceived into the commercial sex trade each year in the United States. The film follows six modern-day abolitionists as they fight sex trafficking across America."
@@ -49,7 +49,7 @@
 -
   title: "Untouchable"
   time: "(15 minutes)"
-  director: "Tim Kressin"
+  director: "Kevin Neynaber"
   country: "Nepal"
   poster: "untouchable-1.jpg"
   synopsis: "Untouchable follows human rights activist Bishnu Maya Pariyar as she journeys across Nepal to return to the village where she was born and raised. Throughout the trek, Bishnu recalls memories of her youth and painful reminders of the discrimination that she faced as a result of her family’s low-caste heritage."
@@ -89,7 +89,7 @@
 -
   title: "If I Give My Soul"
   time: "(58 minutes)"
-  director: "Andrew Johnson"
+  director: "Andrew Johnson, Ryan Patch"
   country: "Brazil"
   poster: "if-i-give-my-soul.jpg"
   synopsis: "In Brazil, the inmates in prisons and jails are almost exclusively poor, black, uneducated males. In these previously un-filmed locations, If I Give My Soul examines how five Brazilian inmates have coped with this profound social stigmatization as well as Rio's brutal justice system by joining prison-based, inmate-led Pentecostal Churches."
@@ -105,7 +105,7 @@
 -
   title: "We The Pearls"
   time: "(43 minutes)"
-  director: "Jamie Kent"
+  director: "Zion Rempel"
   country: "Thailand"
   poster: "we-the-pearls.jpg"
   synopsis: "Over 27 million human beings are trapped in the dungeon of human trafficking. We The Pearls shines a light on those who have emerged from these depths with strength and beauty. Following the trek of Thailand’s sex trafficking trade from the northern poverty stricken regions to the concrete jungle of Bangkok, the film centers on personal stories of redemption, bringing light into the darkness and leaving the viewer with hope."
@@ -113,15 +113,22 @@
 -
   title: "Finding Beauty In The Rubble"
   time: "(4 minutes)"
-  director: "Paul Nethercott"
+  director: "Matthew T. Burns"
   country: "Japan"
   poster: "finding-beauty-in-the-rubble.jpg"
   synopsis: "A story of hope and courage, about a woman who survived the huge tsunami that devastated Japan who now makes gorgeous jewelry out of debris she finds on the beach."
 
 -
-  title: "Untouchable"
+  title: "Untouchable: Children of God"
   time: "(60 minutes)"
   director: "Grant Knisely"
   country: "India/Nepal"
   poster: "untouchable-2.jpg"
   synopsis: "At least 10,000 girls are trafficked from Nepal to the brothels of India each year. Untouchable explores the stories of the “untouchable” Badi people of Nepal and Dalits of India. Despite these seemingly insurmountable odds, there are a growing number of abolitionists and social advocates taking action to help end this brutal form of modern day slavery."
+
+-
+  title: "The Chance"
+  time: "(8 minutes)"
+  director: "Chris Sinclair"
+  poster: "the-chance.jpg"
+  synopsis: "Blah joins The SOLD Project as a Scholarship Director, with the aim preventing human trafficking through education and mentorship. Her aspirations are tested when she meets Som Ying, a high school student on the cusp of a major life decision."
