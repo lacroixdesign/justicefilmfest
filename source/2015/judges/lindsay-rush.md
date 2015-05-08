@@ -1,7 +1,7 @@
 ---
-title: "Karen Olcott"
-date: 2014-01-01 12:12
-twitter: "karenolcott"
+title: "Lyndsay Rush"
+date: 2014-01-01 12:11
+twitter: "rushbomb"
 ---
 
-Karen Olcott is the founder of Partnerships for Global Impact where she works on issues of human justice. She spent 14 years as an Executive at Microsoft, most recently as Director of Strategic Partnerships & Business Development where she negotiated and led technology, eCommerce and content partnerships for Bing and MSN across 45 markets worldwide. In May 2013, Karen was selected as a finalist for the 2013 Microsoft Alumni Foundation Integral Fellows Program for her innovation and leadership in making meaningful difference in the daily lives of others. She has also received two Emmy awards for her time working in television for ABC Sports. Karen makes her home in Seattle, Washington.
+Lyndsay always knew she wanted to make people laugh or be a Harlem Globetrotter when she grew up. After her hoop dreams died in the 8th grade, she started focusing on the first one. She runs her own copywriting shop and her editorial work can be seen at Above Average, Hello Giggles, and The Everygirl. A student at Improv Olympic in Chicago, her passions include wine and wordplay (together or apart) and her dream jobs include writing for Late Night with Jimmy Fallon or somehow becoming Mindy Kaling's roommate and best friend.
