@@ -1,0 +1,10 @@
+.m-sponsor {
+  border-bottom: 2px solid transparent;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover { border-bottom: 2px solid $red;   }
+}

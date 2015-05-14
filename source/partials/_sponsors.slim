@@ -1,0 +1,9 @@
+- if data[year] && data[year].schedule.length > 0
+  section#sponsors.m-section.m-section-white-bg
+    .l-constrained
+      h1 Sponsors
+      .l-sponsors
+        - data[year].sponsors.each do |sponsor|
+          a.m-sponsor(href=sponsor.url target="_blank")
+            .m-sponsor--logo
+              = image_tag "#{year}/sponsors/#{sponsor.logo}"
