@@ -1,8 +1,8 @@
 - if data[year] && data[year].schedule.length > 0
   section#sponsors.m-section.m-section-white-bg
     .l-constrained
-      h1 Sponsors
-      .l-sponsors
+      h1.wow.flipInX  Sponsors
+      .l-sponsors.wow.slideInUp
         - data[year].sponsors.each do |sponsor|
           a.m-sponsor(href=sponsor.url target="_blank")
             .m-sponsor--logo

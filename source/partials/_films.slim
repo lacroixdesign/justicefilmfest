@@ -1,10 +1,10 @@
 - if data[year] && data[year].films.length > 0
   section#films.m-section.m-section-light-bg
     .l-constrained
-      h1 Films
+      h1.wow.flipInX Films
       .l-films
         - data[year].films.each do |film|
-          .l-film.m-film
+          .l-film.m-film.wow.slideInUp
             .l-film-poster.m-film-poster
               = image_tag "#{year}/films/#{film.poster}"
             .l-film-info
