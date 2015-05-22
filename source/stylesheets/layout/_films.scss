@@ -2,7 +2,8 @@
   @include row;
 } // .l-films
 
-.l-film {
+.l-film,
+.l-feature-film {
   @include row;
   margin-bottom: 2em;
 } // .l-film
@@ -21,6 +22,14 @@
 
 } // .l-film-poster
 
+.l-featured-film-poster {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .l-film-trailer {
   margin: 0.5em 0;
 }
@@ -30,6 +39,10 @@
   .l-film {
     @include span-columns(6);
     @include omega(2n);
+  }
+
+  .l-featured-film-poster {
+    @include span-columns(6);
   }
 
 } // @include media(600px)

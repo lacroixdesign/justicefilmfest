@@ -2,6 +2,8 @@
   section#films.m-section.m-section-light-bg
     .l-constrained
       h1.wow.flipInX Films
+      .l-feature-film.m-film.wow.slideInUp
+        = partial "#{year}/featured_film"
       .l-films
         - data[year].films.each do |film|
           .l-film.m-film.wow.slideInUp
