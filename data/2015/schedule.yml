@@ -1,11 +1,138 @@
 -
-  date: "Friday, June 5, 2015:"
-  event: "Premiere Screening (film TBA) 9:00PM at Film Row Cinema"
+  date: "Friday June 5, 2015"
 
 -
-  date: "Saturday, June 6, 2015:"
-  event: "Rooftop VIP Party 9:00PM at secret location (VIP registrants and filmmakers only)"
+  time: "9:30 PM"
+  event: "Premier Event: Captive"
+  location: "Theatre"
 
 -
-  date: "Sunday, June 7, 2015:"
-  event: "Film Festival 9:30AM-11:00PM at Film Row Cinema (individual film screening times TBA)"
+  date: "Saturday June 6, 2015"
+
+-
+  time: "9:00 PM"
+  event: "Rooftop VIP Party"
+  location: "The Flats at East-West University"
+
+-
+  date: "Sunday June 7, 2015"
+
+-
+  time: "10:00 AM"
+  event: "Announcements"
+  location: "Theatre"
+
+-
+  time: "10:15 AM"
+  event: "IMBA Means Sing"
+  location: "Theatre"
+
+-
+  time: "12:45 PM"
+  event: "The Sold Project"
+  location: "Theatre"
+
+-
+  time: "1:00 PM"
+  event: "Finding Beauty in the Ruble"
+  location: "Theatre"
+
+-
+  time: "1:15 PM"
+  event: "Most Likely to Succeed"
+  location: "Theatre"
+
+-
+  time: "1:30 PM"
+  event: "A River Between Us"
+  location: "Screening B"
+
+-
+  time: "2:00 PM"
+  event: "Code Oakland"
+  location: "Screening A"
+
+-
+  time: "2:45 PM"
+  event: "Untouchable"
+  location: "Theatre"
+
+-
+  time: "3:00 PM"
+  event: "We The Pearls"
+  location: "Screening A"
+
+-
+  time: "3:15 PM"
+  event: "If I Give My Soul"
+  location: "Theatre"
+
+-
+  time: "3:30 PM"
+  event: "Lighter Than Orange"
+  location: "Screening B"
+
+-
+  time: "4:00 PM"
+  event: "Katie"
+  location: "Screening A"
+
+-
+  time: "4:30 PM"
+  event: "Daylight Come"
+  location: "Theatre"
+
+-
+  time: "4:45 PM"
+  event: "Aullido"
+  location: "Screening A"
+
+-
+  time: "5:00 PM"
+  event: "Truth Has Fallen"
+  location: "Screening B"
+
+-
+  time: "5:30 PM"
+  event: "Untouchable: Children of God"
+  location: "Screening A"
+
+-
+  time: "6:00 PM"
+  event: "Ink 180"
+  location: "Theatre"
+
+-
+  time: "6:30 PM"
+  event: "A Brave Heart"
+  location: "Theatre"
+
+-
+  time: "6:30 PM"
+  event: "Camp 72"
+  location: "Screening B"
+
+-
+  time: "6:45 PM"
+  event: "In Plain Sight"
+  location: "Screening A"
+
+-
+  time: "8:00 PM"
+  event: "Awards"
+  location: "Theatre"
+
+-
+  time: "8:15 PM"
+  event: "Poverty Inc."
+  location: "Theatre"
+
+-
+  time: "8:30 PM"
+  event: "Ink 180 (Encore Presentation)"
+  location: "Screening A"
+
+-
+  time: "10:00 PM"
+  event: "(Dis)Honesty"
+  location: "Theatre"

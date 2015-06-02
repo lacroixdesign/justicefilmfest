@@ -1,5 +1,10 @@
 .m-schedule {
 
+  h3 {
+    display: block;
+    text-align: center;
+  }
+
   tr {
     border-bottom: 1px dotted darken($light-grey, 10);
     &:last-child { border-bottom: 0; }
@@ -11,17 +16,30 @@
     vertical-align: top;
   }
 
-  .schedule--time,
   .schedule--date {
+    padding: 1em 0 0;
+    border: 0;
+    text-align: center;
+  }
+
+  .schedule--time {
     padding-left: 0;
-    font-weight: bold;
     text-align: right;
+    font-weight: bold;
     white-space: nowrap;
   }
 
-  .schedule--film,
   .schedule--event {
+  }
+
+  .schedule--location {
     padding-right: 0;
+    font-style: italic;
+    text-align: right;
+  }
+
+  th {
+    padding: 0.25em;
   }
 
   @include media-ie(480px) {

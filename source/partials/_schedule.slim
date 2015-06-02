@@ -6,6 +6,9 @@
         table.l-schedule.m-schedule.wow.fadeInUp
           tbody
             - data[year].schedule.each do |schedule|
+              tr.schedule--date
+                th.schedule--date  colspan="3" #{schedule.date}
               tr
-                td.schedule--date #{schedule.date}
+                td.schedule--time #{schedule.time}
                 td.schedule--event #{schedule.event}
+                td.schedule--location #{schedule.location}
