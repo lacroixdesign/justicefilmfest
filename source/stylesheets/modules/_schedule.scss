@@ -53,3 +53,13 @@
   } // @include media-ie($breakpoint-ipad)
 
 } // .m-schedule
+
+.m-schedule-title {
+  margin-bottom: 0.5em;
+}
+
+.m-schedule-download {
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+}

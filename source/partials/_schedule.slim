@@ -2,7 +2,8 @@
   section#schedule.m-section.m-section-white-bg
     .l-constrained
       .l-restricted
-        h1.wow.flipInX  Schedule
+        h1.m-schedule-title.wow.flipInX  Schedule
+        a.m-schedule-download.wow.flipInX(href="/jff-program.pdf" target="_blank") Download the Full Program
         table.l-schedule.m-schedule.wow.fadeInUp
           tbody
             - data[year].schedule.each do |schedule|
