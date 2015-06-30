@@ -36,3 +36,8 @@
   background: $grey;
   color: $dark-grey;
 }
+
+.m-section-tan-bg {
+  background: darken($tan, 25);
+  color: darken($dark-grey, 15);
+}

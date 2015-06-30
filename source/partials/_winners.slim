@@ -1,0 +1,13 @@
+- if data[year] && data[year].films.length > 0
+  section#winners.m-section.m-section-tan-bg
+    .l-constrained
+      .l-winners.m-winners
+        h1 Congratulations to our 2015 Justice Film Festival winners!
+        - data[year].winners.each do |winner|
+          .l-winners-film
+            - if winner.category
+              h4 = winner.category
+            - if winner.title
+              h2 = winner.title
+            - if winner.synopsis
+              p = winner.synopsis

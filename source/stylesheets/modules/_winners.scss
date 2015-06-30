@@ -1,0 +1,18 @@
+.m-winners {
+  text-align: center;
+
+  h1 {
+    margin-bottom: 2.5em;
+    color: darken($dark-grey, 15);
+  }
+
+  h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid;
+    color: $tan;
+    font-family: $typeface-sans;
+    text-transform: uppercase;
+  }
+
+} // .m-winners

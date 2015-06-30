@@ -1,0 +1,15 @@
+.l-winners {
+  @include row;
+
+  .l-winners-film {
+    margin-bottom: 2em;
+  }
+
+  @include media(600px) {
+    .l-winners-film {
+      @include span-columns(4);
+      margin-bottom: 0;
+    }
+  } // @include media(600px)
+
+} // .l-winners
